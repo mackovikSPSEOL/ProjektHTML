@@ -1,14 +1,16 @@
-@import url(fontawesome-all.min.css);
+
 
 body{
-    background-color: #3504163c;
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background: linear-gradient(to bottom, rgb(34, 107, 127), rgb(77, 97, 255));
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
-h1#nadpis{
+h1{
     padding: 5px;
     margin: 5px;
     border: #000000 2px solid;
@@ -16,7 +18,7 @@ h1#nadpis{
     text-align: center;
 
 }
-.menu{
+/* .menu{
     background-color: #ffffff;
     padding: 5px;
     margin: 5px;
@@ -48,8 +50,8 @@ h1#nadpis{
     align-self: center;
     
 
-}
-
+} */
+/* 
 .menu a:hover{
     background-color: #00ff88;
     color: #ffffff;
@@ -58,8 +60,8 @@ h1#nadpis{
     
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     background-color: hsl(206, 100%, 50%);
-     
-}
+  }  */
+
 /* #left:hover{
     background-color: hsl(206, 100%, 50%);
     
@@ -86,14 +88,16 @@ h1#nadpis{
 } */
 
 
-#about_me_text{
+#about_me{
     display: flex;
     border: 2px solid black;
     padding: 10px;
     margin: 5px;
-    width: 100vh;
+    width: 100vw;
     background-color: white;
-    order: 0;
+    max-width: 150vh;
+    max-height: 140vw;
+    
 }
 #uvodni_fotka{
     width: 200px;
@@ -106,13 +110,13 @@ h1#nadpis{
     border-radius: 50%;
 }
 
-#about_me{
+#about_me_text{
     border: 2px solid black;
     margin: 5px;
     padding: 10px;
     height: fit-content;
     width: 100px;
-    
+    color: black;
     border-radius: 50px;
     
     
@@ -121,24 +125,50 @@ h1#nadpis{
     text-decoration: none;
     color: black;
 }
-#ikona{
-    width: 50px;
-    height: 50px;
-}
-#ikona:hover{
-    width: 60px;
-    height: 60px;
-    background-color:#00ff88;
-}
+
+
 #kontakt{
     display: flex;
-    position: fixed;
+    position:static;
     border: 2px solid black;
-    padding: 10px;
+    padding:10px;
     margin: 5px;
-    
+    justify-content: center;
+    flex-direction: row;
     background-color: white;
     bottom: 0;
-    width: fit-content;
-    justify-content: center;
+
+
+}
+
+
+
+.bg_container{
+    background: linear-gradient(to bottom, rgb(34, 107, 127), rgb(77, 97, 255));
+    width: 100vw;
+   
+
+}
+.bg_container_main{
+    background-color: dodgerblue;
+   
+}
+
+.size{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+
+.size:hover{
+    background-color: aqua;
 }
