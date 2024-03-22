@@ -1,0 +1,144 @@
+@import url(fontawesome-all.min.css);
+
+body{
+    background-color: #3504163c;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+h1#nadpis{
+    padding: 5px;
+    margin: 5px;
+    border: #000000 2px solid;
+    background-color:#ffffff;
+    text-align: center;
+
+}
+.menu{
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align:center;
+    display:flex;
+    justify-content: space-between;
+    background-color: #03924f;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    flex-direction: column;
+    transition: 0.5s;
+    
+}
+.menu a{
+    text-decoration: none;
+    background-color: #00ff88;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid black;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: 0.5s;
+    width: 100px;
+    height: fit-content;
+    align-self: center;
+    
+
+}
+
+.menu a:hover{
+    background-color: #00ff88;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: hsl(206, 100%, 50%);
+     
+}
+/* #left:hover{
+    background-color: hsl(206, 100%, 50%);
+    
+    outline-color: invert;
+      
+}
+#middle:hover{
+    background-color: hsl(206, 100%, 50%);
+}
+#right:hover{
+    background-color: hsl(206, 100%, 50%);
+} */
+
+/* 
+.menu{
+    display: none;
+}
+
+.sticky{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+} */
+
+
+#about_me_text{
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 100vh;
+    background-color: white;
+    order: 0;
+}
+#uvodni_fotka{
+    width: 200px;
+
+    height: 200px;
+    border: 2px solid black;
+    margin: 5px;
+    right: 0px;
+    
+    border-radius: 50%;
+}
+
+#about_me{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    height: fit-content;
+    width: 100px;
+    
+    border-radius: 50px;
+    
+    
+}
+#clear{
+    text-decoration: none;
+    color: black;
+}
+#ikona{
+    width: 50px;
+    height: 50px;
+}
+#ikona:hover{
+    width: 60px;
+    height: 60px;
+    background-color:#00ff88;
+}
+#kontakt{
+    display: flex;
+    position: fixed;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    
+    background-color: white;
+    bottom: 0;
+    width: fit-content;
+    justify-content: center;
+}
