@@ -17,5 +17,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         comments[currentComment].classList.add('active');
     });
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    const links = document.querySelectorAll('.odkazovani a');
 
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const blocks = document.querySelectorAll('[id$="-block"]');
+            blocks.forEach(block => {
+                if (block.id === `${event.target.id}-block`) {
+                    block.style.display = 'block';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+        });
+    });
+});
 
