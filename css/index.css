@@ -10,11 +10,20 @@ body{
     max-width: 100vw;
 }
 
+@keyframes SlideDown{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
 
 header h1{
     align-items: center;
     color: rgb(0, 0, 0);
     border: 2px solid black;
+    animation: SlideDown 1s;
 }
 #omne{
     display: flex;
@@ -26,7 +35,7 @@ header h1{
 
 .bg_container{
     background: linear-gradient(to bottom, rgb(34, 107, 127), rgb(77, 97, 255));
-    height: 500px;
+
     
 }
 .bg_container h2{
