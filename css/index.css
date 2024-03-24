@@ -253,9 +253,19 @@ h1{
     #uvodni_fotka{
         height: 100%;
     }
+    #omne h2{ 
+        width: 40vw;
+        height: fit-content;
+    }
+
 }
 
 @media (max-width: 780px) {
+    #omne h2{ 
+        width: 20vw;
+        height: fit-content;
+    }
+
     #fix{
         min-height: fit-content;
     }
@@ -269,15 +279,33 @@ h1{
     .feedback{
         max-width: 90%;
     }
+   
+}
+@media (max-width: 420px) {
+    #omne h2{ 
+        width: 30vw;
+        height: fit-content;
+    }
+    
 }
 
 @media (max-width: 340px) {
    p2#fix{
          font-size: 12px;
         }
+
+    #omne h2{ 
+            width: 30vw;
+            height: fit-content;
+        }
 }
+
 @media (max-width: 200px) {
     p2#fix{
         font-size: 10px;
           }
+          #omne h2{ 
+            width: 30vw;
+            height: fit-content;
+        }
 }
